@@ -1,7 +1,5 @@
 import * as S from './main.style';
 import Link from 'next/link';
-import { auth } from '../../firebase.config';
-import { LoginSignUp } from '../login-signup-form';
 
 const Main = () => {
   return (
@@ -9,11 +7,9 @@ const Main = () => {
       <h1>hello</h1>
       <h2>let`s begin having fun</h2>
 
-      <LoginSignUp auth={auth} />
-
       <S.Flex>
-        <Link href="/admin">Create articles</Link>
-        <Link href="/dashboard">Go to dashboard</Link>
+        <Link href='/admin'>Create articles</Link>
+        <Link href='/dashboard'>Go to dashboard</Link>
       </S.Flex>
 
       {/* <S.Flex>

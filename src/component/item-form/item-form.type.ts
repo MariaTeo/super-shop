@@ -1,4 +1,4 @@
 export interface ItemForm {
-  submit: () => void;
+  submit: (values: any) => Promise<void>;
   editMe: () => void;
 }
